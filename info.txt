@@ -1,0 +1,3 @@
+author : Ananta Yudica;
+email : nta040689@gmail.com
+dialect : C++ 11;
