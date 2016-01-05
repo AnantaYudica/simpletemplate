@@ -48,7 +48,7 @@ template <size_t SIZE_FIRST_LEVEL, size_t SIZE_SECOND_LEVEL, size_t SIZE_THIRD_L
 	typename VARIABLE, typename INITIALIZATION, typename VARIABLE::value_type ... VALUES>
 struct First<SIZE_FIRST_LEVEL, SIZE_SECOND_LEVEL, SIZE_THIRD_LEVEL,
 	Property::STATUS_CODE_RUN_AND_BREAK_FIRST_LEVEL, VARIABLE, INITIALIZATION, VALUES ...> {
-	typedef Values<typename VARIABLE::value_type, VALUES ...> values;
+	typedef typehelper_parameter::Values<typename VARIABLE::value_type, VALUES ...> values;
 	typedef Result<Property::STATUS_CODE_RUN_AND_BREAK_FIRST_LEVEL, VARIABLE, values> result;
 };
 
@@ -56,7 +56,7 @@ template <size_t SIZE_FIRST_LEVEL, size_t SIZE_SECOND_LEVEL, size_t SIZE_THIRD_L
 	typename VARIABLE, typename INITIALIZATION, typename VARIABLE::value_type ... VALUES>
 struct First<SIZE_FIRST_LEVEL, SIZE_SECOND_LEVEL, SIZE_THIRD_LEVEL,
 	Property::STATUS_CODE_END, VARIABLE, INITIALIZATION, VALUES ...> {
-	typedef Values<typename VARIABLE::value_type, VALUES ...> values;
+	typedef typehelper_parameter::Values<typename VARIABLE::value_type, VALUES ...> values;
 	typedef Result<Property::STATUS_CODE_END, VARIABLE, values> result;
 };
 

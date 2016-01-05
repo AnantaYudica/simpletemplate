@@ -29,7 +29,7 @@ struct Third<SIZE_FIRST_LEVEL, SIZE_SECOND_LEVEL, SIZE_THIRD_LEVEL,
 	typedef Variable<typename VARIABLE::value_type, typename VARIABLE::afterhought_type,
 			VARIABLE::value, VARIABLE::afterthought, VARIABLE::total, 0, 0,
 			VARIABLE::count_third_level> push_variable;
-	typedef Values<typename VARIABLE::value_type> push_values;
+	typedef typehelper_parameter::template Values<typename VARIABLE::value_type> push_values;
 	typedef typename Second<SIZE_FIRST_LEVEL, SIZE_SECOND_LEVEL, SIZE_THIRD_LEVEL,
 			Property::STATUS_CODE_RUN, push_variable, INITIALIZATION, push_values>::result ret_result;
 

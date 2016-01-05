@@ -10,6 +10,8 @@
 
 #include <cstddef>
 
+namespace typehelper_parameter{
+
 template <typename T, T ... VAL>
 struct Values {
 	typedef T type;
@@ -38,6 +40,8 @@ struct Values {
 		static const std::size_t s = sizeof...(VAL);
 		return s;
 	};
+};
+
 };
 
 #endif /* MASTER_TYPEHELPER_PARAMETER_VALUES_H_ */

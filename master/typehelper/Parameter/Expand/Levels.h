@@ -29,7 +29,7 @@ struct Levels {
 			Property::ID_THIRD_LEVEL, Property::STATUS_CODE_RUN, 0, is_end>::code;
 	typedef Initialization<Tv, Ti, BODY_FUNCTION, CONDITION_FUNCTION, AFTERTHOUGHT_FUNCTION> initialization;
 	typedef Variable<Tv, Ti, START_VALUE, START_AFTERTHOUGHT, 0, 0, 0, 0> variable;
-	typedef Values<Tv> values;
+	typedef typehelper_parameter::Values<Tv> values;
 	typedef typename Third<SIZE_FIRST_LEVEL, SIZE_SECOND_LEVEL, SIZE_THIRD_LEVEL,
 			code, variable, initialization, values>::result result;
 };

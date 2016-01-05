@@ -8,13 +8,15 @@
 #ifndef MASTER_TYPEHELPER_PARAMETER_EXPAND_H_
 #define MASTER_TYPEHELPER_PARAMETER_EXPAND_H_
 
-#include "Properties.h"
+#include "../Properties.h"
 #include "Values.h"
 #include "Expand/Levels.h"
 
-template <size_t SIZE_FIRST_LEVEL = typehelper_Parameter_Properties::Property::SIZE_FIRST_LEVEL,
-	size_t SIZE_SECOND_LEVEL = typehelper_Parameter_Properties::Property::SIZE_SECOND_LEVEL,
-	size_t SIZE_THIRD_LEVEL = typehelper_Parameter_Properties::Property::SIZE_THIRD_LEVEL>
+namespace typehelper_parameter{
+
+template <size_t SIZE_FIRST_LEVEL = typehelper::Property::Parameter::SIZE_FIRST_LEVEL,
+	size_t SIZE_SECOND_LEVEL = typehelper::Property::Parameter::SIZE_SECOND_LEVEL,
+	size_t SIZE_THIRD_LEVEL = typehelper::Property::Parameter::SIZE_THIRD_LEVEL>
 class Expand {
 private:
 	static const size_t MAXIMUM_LIMIT_FIRST_LEVEL = SIZE_FIRST_LEVEL;
@@ -29,8 +31,11 @@ public:
 		Tv START_VALUE = 0, Ti START_AFTERTHOUGHT = 0>
 	struct values {
 		typedef typename Levels<SIZE_FIRST_LEVEL, SIZE_SECOND_LEVEL, SIZE_THIRD_LEVEL,
-				Tv, Ti, BODY_FUNCTION, CONDITION_FUNCTION, AFTERTHOUGHT_FUNCTION, START_VALUE, START_AFTERTHOUGHT>::result::values result;
+				Tv, Ti, BODY_FUNCTION, CONDITION_FUNCTION, AFTERTHOUGHT_FUNCTION, START_VALUE, START_AFTERTHOUGHT>::result::values get;
+		typedef typename typehelper_parameter::Values<Tv>::template join<get>::type result;
 	};
+};
+
 };
 
 #endif /* MASTER_TYPEHELPER_PARAMETER_EXPAND_H_ */
