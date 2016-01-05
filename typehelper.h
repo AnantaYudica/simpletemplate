@@ -8,13 +8,11 @@
 #ifndef TYPEHELPER_H_
 #define TYPEHELPER_H_
 
-#include "master/typehelper/Parameter/Expand.h"
-#include "master/typehelper/Parameter/Values.h"
+#include "master/typehelper/Parameter.h"
 
 namespace simpletemplate {
 
-using ::Values;
-using ::Expand;
+using ::Parameter;
 
 };
 
