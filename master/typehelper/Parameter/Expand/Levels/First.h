@@ -41,7 +41,7 @@ struct First<SIZE_FIRST_LEVEL, SIZE_SECOND_LEVEL, SIZE_THIRD_LEVEL,
 	typedef Variable<typename VARIABLE::value_type, typename VARIABLE::afterhought_type,
 			value, afterthought, total, count_first_level, count_second_level, count_third_level> variable;
 	typedef typename First<SIZE_FIRST_LEVEL, SIZE_SECOND_LEVEL, SIZE_THIRD_LEVEL,
-			code, variable, INITIALIZATION, VALUES ..., value>::result result;
+			code, variable, INITIALIZATION, VALUES ..., VARIABLE::value>::result result;
 };
 
 template <size_t SIZE_FIRST_LEVEL, size_t SIZE_SECOND_LEVEL, size_t SIZE_THIRD_LEVEL,
