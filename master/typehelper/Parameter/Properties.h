@@ -5,11 +5,11 @@
  *      Author: "Ananta Yudica"
  */
 
-#ifndef MASTER_TYPEHELPER_PARAMETER_VALUES_PROPERTIES_H_
-#define MASTER_TYPEHELPER_PARAMETER_VALUES_PROPERTIES_H_
+#ifndef MASTER_TYPEHELPER_PARAMETER_PROPERTIES_H_
+#define MASTER_TYPEHELPER_PARAMETER_PROPERTIES_H_
 
 
-namespace typehelper_parameter_values{
+namespace typehelper_parameter{
 
 struct Property{
 	struct Expand {
@@ -22,4 +22,4 @@ struct Property{
 };
 
 
-#endif /* MASTER_TYPEHELPER_PARAMETER_VALUES_PROPERTIES_H_ */
+#endif /* MASTER_TYPEHELPER_PARAMETER_PROPERTIES_H_ */

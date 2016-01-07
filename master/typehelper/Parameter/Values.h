@@ -9,7 +9,6 @@
 #define MASTER_TYPEHELPER_PARAMETER_VALUES_H_
 
 #include <cstddef>
-#include "values/Properties.h"
 
 namespace typehelper_parameter{
 
@@ -49,7 +48,6 @@ public:
 
 };
 
-#include "values/Expand.h"
 
 namespace typehelper_parameter{
 
@@ -57,12 +55,7 @@ class values {
 protected:
 	values() {};
 public:
-	template <size_t SIZE_FIRST_LEVEL = typehelper_parameter_values::Property::Expand::SIZE_FIRST_LEVEL,
-		size_t SIZE_SECOND_LEVEL = typehelper_parameter_values::Property::Expand::SIZE_SECOND_LEVEL,
-		size_t SIZE_THIRD_LEVEL = typehelper_parameter_values::Property::Expand::SIZE_THIRD_LEVEL>
-	class Expand : public typehelper_parameter_values::Expand<SIZE_FIRST_LEVEL, SIZE_SECOND_LEVEL, SIZE_THIRD_LEVEL>{
 
-	};
 };
 
 };

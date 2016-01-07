@@ -5,14 +5,14 @@
  *      Author: "Ananta Yudica"
  */
 
-#ifndef MASTER_TYPEHELPER_PARAMETER_VALUES_EXPAND_H_
-#define MASTER_TYPEHELPER_PARAMETER_VALUES_EXPAND_H_
+#ifndef MASTER_TYPEHELPER_PARAMETER_EXPAND_H_
+#define MASTER_TYPEHELPER_PARAMETER_EXPAND_H_
 
-#include "../Values.h"
+#include "Values.h"
 #include "expand/Levels.h"
 #include "Properties.h"
 
-namespace typehelper_parameter_values{
+namespace typehelper_parameter{
 
 template <size_t SIZE_FIRST_LEVEL = Property::Expand::SIZE_FIRST_LEVEL,
 	size_t SIZE_SECOND_LEVEL = Property::Expand::SIZE_SECOND_LEVEL,
@@ -40,4 +40,4 @@ public:
 
 };
 
-#endif /* MASTER_TYPEHELPER_PARAMETER_VALUES_EXPAND_H_ */
+#endif /* MASTER_TYPEHELPER_PARAMETER_EXPAND_H_ */

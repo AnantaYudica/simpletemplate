@@ -5,17 +5,17 @@
  *      Author: "Ananta Yudica"
  */
 
-#ifndef MASTER_TYPEHELPER_PARAMETER_VALUES_EXPAND_LEVELS_H_
-#define MASTER_TYPEHELPER_PARAMETER_VALUES_EXPAND_LEVELS_H_
+#ifndef MASTER_TYPEHELPER_PARAMETER_EXPAND_LEVELS_H_
+#define MASTER_TYPEHELPER_PARAMETER_EXPAND_LEVELS_H_
 
-#include "../../Values.h"
+#include "../Values.h"
 #include "Initialization.h"
 #include "levels/Third.h"
 #include "Properties.h"
 #include "Status.h"
 #include "Variable.h"
 
-using namespace typehelper_parameter_values_expand;
+using namespace typehelper_parameter_expand;
 
 template <size_t SIZE_FIRST_LEVEL, size_t SIZE_SECOND_LEVEL, size_t SIZE_THIRD_LEVEL,
 	class Tv, class Ti,
@@ -34,4 +34,4 @@ struct Levels {
 			code, variable, initialization, values>::result result;
 };
 
-#endif /* MASTER_TYPEHELPER_PARAMETER_VALUES_EXPAND_LEVELS_H_ */
+#endif /* MASTER_TYPEHELPER_PARAMETER_EXPAND_LEVELS_H_ */
