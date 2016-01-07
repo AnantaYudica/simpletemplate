@@ -12,7 +12,7 @@
 
 namespace simpletemplate {
 
-using ::Parameter;
+using ::typehelper::parameter;
 
 };
 

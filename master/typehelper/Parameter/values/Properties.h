@@ -5,14 +5,14 @@
  *      Author: "Ananta Yudica"
  */
 
-#ifndef MASTER_TYPEHELPER_PROPERTIES_H_
-#define MASTER_TYPEHELPER_PROPERTIES_H_
+#ifndef MASTER_TYPEHELPER_PARAMETER_VALUES_PROPERTIES_H_
+#define MASTER_TYPEHELPER_PARAMETER_VALUES_PROPERTIES_H_
 
 
-namespace typehelper{
+namespace typehelper_parameter_values{
 
 struct Property{
-	struct Parameter {
+	struct Expand {
 		static const size_t SIZE_FIRST_LEVEL = 300;
 		static const size_t SIZE_SECOND_LEVEL = 200;
 		static const size_t SIZE_THIRD_LEVEL = 100;
@@ -22,4 +22,4 @@ struct Property{
 };
 
 
-#endif /* MASTER_TYPEHELPER_PROPERTIES_H_ */
+#endif /* MASTER_TYPEHELPER_PARAMETER_VALUES_PROPERTIES_H_ */

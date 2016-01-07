@@ -5,10 +5,10 @@
  *      Author: "Ananta Yudica"
  */
 
-#ifndef MASTER_TYPEHELPER_PARAMETER_EXPAND_PROPERTIES_H_
-#define MASTER_TYPEHELPER_PARAMETER_EXPAND_PROPERTIES_H_
+#ifndef MASTER_TYPEHELPER_PARAMETER_VALUES_EXPAND_PROPERTIES_H_
+#define MASTER_TYPEHELPER_PARAMETER_VALUES_EXPAND_PROPERTIES_H_
 
-namespace typehelper_Parameter_Expand_Properities {
+namespace typehelper_parameter_values_expand {
 
 struct Property {
 	static const int ID_FIRST_LEVEL = 0;
@@ -24,4 +24,4 @@ struct Property {
 
 };
 
-#endif /* MASTER_TYPEHELPER_PARAMETER_EXPAND_PROPERTIES_H_ */
+#endif /* MASTER_TYPEHELPER_PARAMETER_SINGLETYPE_EXPAND_PROPERTIES_H_ */

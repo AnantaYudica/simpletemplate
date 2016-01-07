@@ -5,17 +5,17 @@
  *      Author: "Ananta Yudica"
  */
 
-#ifndef MASTER_TYPEHELPER_PARAMETER_EXPAND_LEVELS_SECOND_H_
-#define MASTER_TYPEHELPER_PARAMETER_EXPAND_LEVELS_SECOND_H_
+#ifndef MASTER_TYPEHELPER_PARAMETER_VALUES_EXPAND_LEVELS_SECOND_H_
+#define MASTER_TYPEHELPER_PARAMETER_VALUES_EXPAND_LEVELS_SECOND_H_
 
+#include "../../../Values.h"
 #include "../Properties.h"
+#include "../Result.h"
 #include "../Status.h"
 #include "../Variable.h"
-#include "../Result.h"
 #include "First.h"
-#include "../../Values.h"
 
-using namespace typehelper_Parameter_Expand_Properities;
+using namespace typehelper_parameter_values_expand;
 
 template <size_t SIZE_FIRST_LEVEL, size_t SIZE_SECOND_LEVEL, size_t SIZE_THIRD_LEVEL,
 	int STATUS_CODE, typename VARIABLE, typename INITIALIZATION, typename VALUES>
@@ -60,4 +60,4 @@ struct Second<SIZE_FIRST_LEVEL, SIZE_SECOND_LEVEL, SIZE_THIRD_LEVEL,
 	typedef Result<Property::STATUS_CODE_RUN_AND_BREAK_SECOND_LEVEL, VARIABLE, VALUES> result;
 };
 
-#endif /* MASTER_TYPEHELPER_PARAMETER_EXPAND_LEVELS_SECOND_H_ */
+#endif /* MASTER_TYPEHELPER_PARAMETER_VALUES_EXPAND_LEVELS_SECOND_H_ */

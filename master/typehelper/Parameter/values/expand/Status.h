@@ -5,13 +5,14 @@
  *      Author: "Ananta Yudica"
  */
 
-#ifndef MASTER_TYPEHELPER_PARAMETER_EXPAND_STATUS_H_
-#define MASTER_TYPEHELPER_PARAMETER_EXPAND_STATUS_H_
+#ifndef MASTER_TYPEHELPER_PARAMETER_VALUES_EXPAND_STATUS_H_
+#define MASTER_TYPEHELPER_PARAMETER_VALUES_EXPAND_STATUS_H_
 
-#include "Properties.h"
 #include <cstddef>
 
-using namespace typehelper_Parameter_Expand_Properities;
+#include "Properties.h"
+
+using namespace typehelper_parameter_values_expand;
 
 template <size_t LIMIT_FIRST_LEVEL, size_t LIMIT_SECOND_LEVEL, size_t LIMIT_THIRD_LEVEL,
 	int ID, int CODE_STATUS, size_t COUNT, bool IS_END = false>
@@ -47,4 +48,4 @@ struct Status<LIMIT_FIRST_LEVEL, LIMIT_SECOND_LEVEL, LIMIT_THIRD_LEVEL,
 							Property::STATUS_CODE_RUN_AND_BREAK_THIRD_LEVEL;
 };
 
-#endif /* MASTER_TYPEHELPER_PARAMETER_EXPAND_STATUS_H_ */
+#endif /* MASTER_TYPEHELPER_PARAMETER_VALUES_EXPAND_STATUS_H_ */
