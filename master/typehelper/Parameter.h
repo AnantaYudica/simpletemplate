@@ -12,6 +12,7 @@
 #include "parameter/Values.h"
 #include "parameter/Properties.h"
 #include "parameter/Expand.h"
+#include "parameter/Types.h"
 
 namespace typehelper {
 
@@ -37,6 +38,17 @@ public:
 	class Expand : public typehelper_parameter::Expand<SIZE_FIRST_LEVEL, SIZE_SECOND_LEVEL, SIZE_THIRD_LEVEL>{
 	private:
 		Expand() {};
+	};
+
+	template<typename ... ARGS>
+	class Types : public typehelper_parameter::Types<ARGS ...> {
+	private:
+		Types() {};
+	};
+
+	class types : public typehelper_parameter::types {
+	private:
+		types() {};
 	};
 };
 

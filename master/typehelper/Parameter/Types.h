@@ -10,6 +10,8 @@
 
 #include "types/Index.h"
 
+namespace typehelper_parameter {
+
 template <typename ... ARGS>
 class Types {
 public:
@@ -20,6 +22,8 @@ public:
 struct types{
 	template <size_t INDEX, typename ... ARGS>
 	class Index : public typehelper_parameter_types::Index<INDEX, ARGS...> {};
+};
+
 };
 
 #endif /* MASTER_TYPEHELPER_PARAMETER_TYPES_H_ */
