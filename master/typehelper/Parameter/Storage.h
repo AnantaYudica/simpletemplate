@@ -13,6 +13,7 @@
 #include "storage/Index.h"
 #include "storage/Values.h"
 
+namespace typehelper_parameter {
 
 template<typename ... ARGS>
 class Storage {
@@ -36,5 +37,6 @@ public:
 	};
 };
 
+};
 
 #endif /* MASTER_TYPEHELPER_PARAMETER_STORAGE_H_ */

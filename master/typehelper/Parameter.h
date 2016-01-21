@@ -13,6 +13,7 @@
 #include "parameter/Properties.h"
 #include "parameter/Expand.h"
 #include "parameter/Types.h"
+#include "parameter/Storage.h"
 
 namespace typehelper {
 
@@ -49,6 +50,13 @@ public:
 	class types : public typehelper_parameter::types {
 	private:
 		types() {};
+	};
+
+	template<typename ... ARGS>
+	class Storage : public typehelper_parameter::Storage<ARGS ...> {
+	public:
+		Storage() {};
+		Storage(ARGS ... args) : typehelper_parameter::Storage<ARGS ...>(args ...) {};
 	};
 };
 
